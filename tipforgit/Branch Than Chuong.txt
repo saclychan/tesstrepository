@@ -1,0 +1,5 @@
+``Create Branch 
+$	git branch nameOfBranch
+
+`` Switch Branch
+	git checkout nameOfBranch

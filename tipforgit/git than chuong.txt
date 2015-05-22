@@ -21,7 +21,9 @@ git config --global user.email <youremail@example.com>
 	 	git add . or git add --all or git add *.*
 
 `` view history commit id
-	git log | head -1 | sed s/'commit '//	 
+	git log | head -1 | sed s/'commit '//
+	or
+	git log --pretty=oneline	 
 
 `` view different change between two commit
 	git diff idcommitbefore idcommitafter
