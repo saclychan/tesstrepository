@@ -1,0 +1,38 @@
+``Configure Git
+git --version 
+
+
+git config --global user.name "<Your Name>"
+git config --global user.email <youremail@example.com>
+
+``Step: Create a Repository
+	mkdir hello-world
+	cd hello-world
+	git init
+	git status
+
+``Add and Commit Changes
+	git add file_name.txt
+	 git commit -m "<your commit message>"
+	 //add all file
+	 	git add . or git add --all or git add *.*
+
+`` view history commit id
+	git log | head -1 | sed s/'commit '//	 
+
+`` view different change between two commit
+	git diff idcommitbefore idcommitafter
+	git diff --name-only idcommitbefore idcommitafter //file nào bị thay đổi
+
+``Step: Connect your Local to your Remote // upload lên host và ...
+	@@git remote add <REMOTENAME> <URL>
+	git remote add origin <URLFROMGITHUB> // liên kết
+	 git push origin master // đẩy lên host git hub
+
+
+`` view remote connection
+	git remote -v
+
+`` kéo về (pull về)	
+	git pull <REMOTENAME> <BRANCHNAME>
+	git pull origin master
