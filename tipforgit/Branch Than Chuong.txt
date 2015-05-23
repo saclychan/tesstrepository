@@ -1,0 +1,11 @@
+``Create Branch 
+$	git branch nameOfBranch
+
+`` Switch Branch
+	git checkout nameOfBranch
+
+``Create anh Switch to New Branch
+$	git checkout -b nameOfBranch
+
+``Check Branch Are You On
+$	git branch	
